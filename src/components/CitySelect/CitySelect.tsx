@@ -16,7 +16,10 @@ export function CitySelect() {
         { value: '2', label: 'Санкт-Петербург' },
       ]}
       value={city}
-      onChange={(value) => dispatch(setCity(value || 'all'))}
+      onChange={(value) => {
+  const cityValue = value as 'all' | '1' | '2';
+  dispatch(setCity(cityValue || 'all'));
+}}
     />
   );
 }
