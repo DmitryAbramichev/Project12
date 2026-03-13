@@ -46,7 +46,7 @@ useEffect(() => {
         color="black"
         mt="md"
         component="a"
-        href={vacancy.url}
+        href={vacancy.alternate_url}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -54,7 +54,7 @@ useEffect(() => {
       </Button>
          <Button
           component="a"
-          href={vacancy.url}
+          href={vacancy.alternate_url}
           mt="md"
           target="_blank"
           rel="noopener noreferrer"

@@ -20,9 +20,6 @@ export const fetchVacancies = createAsyncThunk<
     per_page: '10',
     industry: '7',
     professional_role: '96',
-    // ...(filters.search && { text: filters.search, search_field: 'name' }),
-    // ...(filters.city !== 'all' && { area: filters.city }),
-    // ...(filters.skills.length && { skill_set: filters.skills.join(',') }),
   });
   if (filters.search) {
       params.append('text', filters.search);

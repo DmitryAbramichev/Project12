@@ -1,6 +1,7 @@
 export interface Vacancy {
   id: string;
   name: string;
+  alternate_url: string;
   salary?: {
     from?: number;
     to?: number;

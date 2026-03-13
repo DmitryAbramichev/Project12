@@ -19,7 +19,7 @@ export const SearchBar = () => {
   };
 
   return (
-    <Flex gap="md" align="center" style={{ width: '100%' }}>
+    <Flex gap="md" align="center" style={{ width: '508px' }}>
       <TextInput
         placeholder="Поиск по названию вакансии или компании..."
         value={inputValue}

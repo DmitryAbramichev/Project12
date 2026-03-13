@@ -26,13 +26,17 @@ export function Main() {
   return (
     <AppShell.Main>
       <Flex justify="center" direction="column">
-      <Flex justify="center" direction="row" gap="xl" wrap="nowrap" p="xl" >
-        <div>
-            <Text fw={600} size="lg">Список вакансий</Text>
-            <Text size="sm" c="dimmed">по профессии Frontend-разработчик</Text>
-        </div>
-        <SearchBar />
-      </Flex>
+      <Flex justify="center" direction="row" gap="xl" wrap="nowrap" p="xl">
+ 
+  {/* Правый блок с заголовком и поиском, такой же как правая колонка */}
+  <Flex justify="space-between" direction="row" gap="md" style={{ flex: 1, maxWidth:1130 }}>
+    <div style={{ width: 366 }}>
+      <Text fw={700} size="xl">Список вакансий</Text>
+      <Text size="sm" c="dimmed">по профессии Frontend-разработчик</Text>
+    </div>
+    <SearchBar />
+  </Flex>
+</Flex>
     
       <Flex justify="center" direction="row" gap="xl" wrap="wrap" p="xl">
         
